@@ -13,3 +13,9 @@ Header h1,
 h2 {
     color: white;
 }
+
+img {
+    padding: 10px;
+    height: 150px;
+    width: 150px;
+}
