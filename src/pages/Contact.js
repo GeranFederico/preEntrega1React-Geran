@@ -1,9 +1,17 @@
+import React, { useEffect } from "react";
+
+import { useNavigate } from "react-router-dom";
+
 const Contact = () => {
-    return (
-        <div>
-            <h1>Contact</h1>
-        </div>
-    );
-}
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        setTimeout(() => {
+            navigate("/");
+        }, 2000);
+    }, [navigate]);
+
+    return <div>Contact</div>;
+};
 
 export default Contact;
