@@ -1,11 +1,11 @@
 import React from "react";
 
-import CardUser from "../components/CardUser/CardUser";
+import CardList from "../components/CardList/CardList";
 
 const Home = () => {
     return (
         <div>
-            <h1><CardUser/></h1>
+            <CardList/>
         </div>
     );
 }

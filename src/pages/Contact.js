@@ -8,7 +8,7 @@ const Contact = () => {
     useEffect(() => {
         setTimeout(() => {
             navigate("/");
-        }, 2000);
+        }, 5000);
     }, [navigate]);
 
     return <div>Contact</div>;
