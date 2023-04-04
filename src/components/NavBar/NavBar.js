@@ -1,28 +1,24 @@
 import React from "react";
 import "./NavBar.css";
 
+import { Link } from "react-router-dom";
+
 import Shop from "../Shop/Shop";
 
 const NavBar = () => {
     return (
     <nav className="Navigation">
-        <ul className="List-ul">
-            <li>
-                <h1 style={{ color: "white" }} >Compas-Shop</h1>
-            </li>
-            <li>
-                <a href="www.coderhouse.com">Home</a>
-            </li>
-            <li>
-                <a href="www.coderhouse.com">Contact</a>
-            </li>
-            <li>
-                <a href="www.coderhouse.com">About</a>
-            </li>
-            <li>
-                <Shop />
-            </li>
-        </ul>
+    <ul className="List-ul">
+        <Link className="Link" to="/">
+            Home
+        </Link>
+        <Link className="Link" to="/about">
+            About
+        </Link>
+        <Link className="Link" to="/contact">
+            Contact
+        </Link>
+    </ul>
     </nav>
     );
 };
